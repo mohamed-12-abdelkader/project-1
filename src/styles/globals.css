@@ -1,27 +1,101 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Merriweather", serif;
+  height: auto;
+  background-color: rgb(25, 2, 47);
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.budget-numbers:nth-child(1) {
+  background-color: rgb(234, 105, 105);
+}
+.budget-numbers:nth-child(2) {
+  background-color: purple;
+}
+.budget-numbers:nth-child(3) {
+}
+/* button storey style*/
+
+.btn {
+  size: 1rem;
+  background-color: blueviolet;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.3s;
+  margin: 5px;
+}
+.btn-smal {
+  size: 0.75rem;
+}
+
+.btn-large {
+  size: 1.25rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.btn:hover {
+  background-color: rgb(157, 67, 241);
+}
+.btn:active {
+  background-color: rgb(69, 10, 124);
+}
+
+.btn-success {
+  background-color: rgb(80, 221, 80);
+}
+.btn-success:hover {
+  background-color: rgb(112, 243, 112);
+}
+.btn-success:active {
+  background-color: rgb(3, 92, 3);
+}
+
+.btn-error {
+  background-color: rgb(230, 28, 28);
+}
+.btn-error:hover {
+  background-color: rgb(226, 123, 130);
+}
+.btn-error:active {
+  background-color: rgb(56, 1, 1);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-icon {
+  padding: 0;
+  border-radius: 20rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ==button storey style==*/
+
+.activ {
+  background-color: rgb(81, 228, 81);
+}
+
+select {
+  background-color: rgb(40, 39, 39);
+  height: 30px;
+  margin: 5px;
+  font-size: 20px;
 }
